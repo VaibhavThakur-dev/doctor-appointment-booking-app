@@ -15,13 +15,14 @@ const Navbar = () => {
           <li><a href="#services" className="hover:text-green-500">Services</a></li>
           <li><a href="#team" className="hover:text-green-500">Our-Team</a></li>
         </ul>
+        <Button name = "log-In"/>
         {
           togle ?
         <MdOutlineClose onClick={() =>settogle(!togle)} className="text-3xl text-green-500 flex md:hidden "/>
         :
         <MdMenu  onClick={() =>settogle(!togle)} className="text-3xl text-green-500 flex md:hidden"/>
         }
-        <Button name = "Contact-Us"/>
+        
       </div>
     </nav>
 
