@@ -4,17 +4,22 @@ import About from './components/About';
 import Services from './components/Services';
 import Team from './components/Team';
 import Contact from './components/Contact';
+import LoginSignup from './components/LoginSignup';
 
 function App() {
   
   return (
     <>
+
+     <div className='bg-[#e8f6ff]'>
      <Navbar />
      <Home />
-     {/* <About /> */}
+     <About />
      {/* <Services /> */}
      <Team />
-     {/* <Contact /> */}
+     <Contact />
+     <LoginSignup />
+     </div>
     </>
   )
 }

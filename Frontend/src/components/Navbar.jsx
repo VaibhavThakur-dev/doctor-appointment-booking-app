@@ -6,9 +6,9 @@ const Navbar = () => {
   const [togle, settogle] = useState(false);
   return (
     <>
-      <nav className="fixed w-full bg-white shadow-md z-50">
+      <nav className="fixed w-full bg-[#e8f6ff] shadow-md z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-green-500">Fortis</h1>
+          <h1 className="text-xl font-bold text-green-500">P-Healthcare</h1>
           <ul className="hidden md:flex space-x-6 text-xl">
             <li>
               <a href="#home" className="hover:text-green-500">
@@ -28,6 +28,11 @@ const Navbar = () => {
             <li>
               <a href="#team" className="hover:text-green-500">
                 Our-Team
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-green-500">
+                Contact
               </a>
             </li>
           </ul>
