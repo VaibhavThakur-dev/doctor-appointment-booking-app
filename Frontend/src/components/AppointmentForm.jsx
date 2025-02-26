@@ -21,7 +21,7 @@ const AppointmentForm = () => {
   };
 
   return (
-    <div id="book-appointment" className="flex justify-center items-center min-h-screen p-28">
+    <div id="book-appointment" className="flex justify-center items-center min-h-screen py-28 px-4">
       <div className="bg-white shadow-lg rounded-lg p-6 max-w-md w-full">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">Book an Appointment</h2>
         <form onSubmit={handleSubmit} className="space-y-4">

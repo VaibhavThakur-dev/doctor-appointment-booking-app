@@ -9,7 +9,7 @@ function Team() {
   return (
     <>
       <div id='team'  className='flex flex-col items-center justify-center py-16 md:py-24 gap-y-5 md:gap-y-24'>
-      <h1 className='text-3xl font-bold '>OUR-TEAM</h1>
+      <h1 className='text-3xl font-bold '>Our-Team</h1>
         <div className="flex flex-wrap justify-center flex-col md:flex-row md:gap-x-8 gap-y-4 px-8 md:p-0">
           <Cards name = "Mr.Vaibhav" img ={D2} />
           <Cards name = "Mr.halena" img ={D6}/>

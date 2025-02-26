@@ -57,7 +57,7 @@ const Navbar = () => {
       >
         <div className="text-3xl gap-10 py-12 flex flex-col justify-center items-center">
           <Link
-            to="home"
+            to="/"
             onClick={() => settogle(!togle)}
             className=" hover:text-green-800"
           >
