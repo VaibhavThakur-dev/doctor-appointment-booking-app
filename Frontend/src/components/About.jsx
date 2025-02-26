@@ -1,4 +1,6 @@
 import React from "react";
+import vision from "../assets/Vision.svg"
+import Mission from "../assets/Mission.svg"
 
 function About() {
   return (
@@ -22,15 +24,19 @@ function About() {
         </div>
       </div>
       <div className="md:px-16 px-12 bg-[#e8f6ff] pb-4 md:w-2/3"><h2 className="font-bold ">P-Healtcare -</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta atque vero possimus velit error natus reprehenderit distinctio quia, sint inventore a reiciendis qui quae libero quaerat nobis necessitatibus cupiditate dignissimos iusto ullam nam nisi aliquid laboriosam quisquam. Animi, doloremque perspiciatis reprehenderit voluptas culpa dolorum ad cumque, quisquam asperiores provident deserunt!</p></div>
-      <div className="md:p-2 p-8 flex md:flex-row gap-10 flex-col items-center justify-center bg-[#e8f6ff] ">
-          <div className="flex flex-col justify-center border border-slate-700 px-6 py-4 bg-white rounded-lg h-[300px] md:w-[46%] shadow-lg shadow-slate-600">
-            <div className="h-[50%] w-full flex items-center justify-center bg-slate-500">jkkbknb</div>
-            <div className="h-[50%] w-full bg-slate-200 flex flex-col pt- text-center"><h2 className="text-2xl font-bold">Mission</h2><p>To create a world-class integrated healthcare delivery system in India, entailing the finest medical skills combined with compassionate patient care.</p> </div>
+
+      <div className="md:p-16 p-8 flex md:flex-row gap-20 flex-col items-center justify-center bg-[#e8f6ff] ">
+          <div className="flex flex-col justify-center border border-slate-700 px-6 py-4 bg-white rounded-lg h-[300px] md:w-[40%] shadow-lg shadow-slate-600">
+            <div className="h-[50%] w-full flex items-center justify-center ">
+              <img loading="lazy" width="60" height="60" src={vision} alt="visio icon"/></div>
+            <div className="h-[50%] w-full flex flex-col pt- text-center"><h2 className="text-2xl font-bold">Mission</h2><p>To create a world-class integrated healthcare delivery system in India, entailing the finest medical skills combined with compassionate patient care.</p> </div>
           </div>
 
-          <div className="flex flex-col justify-center border border-slate-700 px-6 py-4 bg-white rounded-lg h-[300px] md:w-[46%] shadow-lg shadow-slate-600">
-            <div className="h-[50%] w-full flex items-center justify-center bg-slate-500">jkkbknb</div>
-            <div className="h-[50%] w-full flex flex-col text-center"><h2 className="text-2xl font-bold pb-3">Vission</h2><p>To create a world-class integrated healthcare delivery system in India, entailing the finest medical skills combined with compassionate patient care.</p> </div>
+          <div className="flex flex-col justify-center border border-slate-700 px-6 py-4 bg-white rounded-lg h-[300px] md:w-[40%] shadow-lg shadow-slate-600">
+            <div className="h-[50%] w-full flex items-center justify-center">
+            <img loading="lazy" width="60" height="60" src={Mission} alt="visio icon"/>
+            </div>
+            <div className="h-[50%] w-full flex flex-col text-center"><h2 className="text-2xl font-bold pb-3">Vission</h2><p>To be a globally respected healthcare organisation known for Clinical Excellence and Distinctive Patient Care.</p> </div>
           </div>
       </div>
     </>

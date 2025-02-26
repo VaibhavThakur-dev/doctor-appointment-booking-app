@@ -1,5 +1,10 @@
 import React from "react";
 import { FaPhone, FaRegCalendarDays } from "react-icons/fa6";
+import About from "./About";
+import Contact from "./Contact";
+import Services from "./Services";
+import Team from "./Team";
+import { Link } from "react-router";
 
 function Home() {
   return (
@@ -15,7 +20,7 @@ function Home() {
           </div>
           <div className="duration-500 flex items-center  py-2 px-3 border border-slate-900 rounded-3xl bg-green-400 hover:bg-green-600">
             <FaRegCalendarDays className="mr-1" />
-            <button>Book an Appointment</button>
+            <Link to="/book-appointment"><button>Book an Appointment</button></Link>
           </div>
         </div>
         <div className="w-full flex flex-col md:flex-row items-center justify-evenly font-medium px-20 md:px-32 py-10 text-2xl gap-20 bg-green-300">
@@ -25,6 +30,10 @@ function Home() {
           </div>
         </div>
       </div>
+       <About/>
+      <Services />
+      <Team />
+      <Contact />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MdOutlineClose, MdMenu } from "react-icons/md";
 import Button from "./UI/Button";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [togle, settogle] = useState(false);
@@ -11,32 +12,30 @@ const Navbar = () => {
           <h1 className="text-xl font-bold text-green-500">P-Healthcare</h1>
           <ul className="hidden md:flex space-x-6 text-xl">
             <li>
-              <a href="#home" className="hover:text-green-500">
-                Home
-              </a>
+              <Link to="/" className="hover:text-green-500">Home</Link>
             </li>
             <li>
-              <a href="#about" className=" hover:text-green-500">
+              <Link to="/about" className=" hover:text-green-500">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#services" className="hover:text-green-500">
+              <Link to="/services" className="hover:text-green-500">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#team" className="hover:text-green-500">
+              <Link to="/team" className="hover:text-green-500">
                 Our-Team
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="hover:text-green-500">
+              <Link to="/contact" className="hover:text-green-500">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
-          <Button name="log-In" />
+          <Link to="/log-In"><Button name="log-In" /></Link>
           {togle ? (
             <MdOutlineClose
               onClick={() => settogle(!togle)}
@@ -57,41 +56,41 @@ const Navbar = () => {
               ${togle ? "left-[0]" : "left-[-100%]"} z-20`}
       >
         <div className="text-3xl gap-10 py-12 flex flex-col justify-center items-center">
-          <a
-            href="#home"
+          <Link
+            to="home"
             onClick={() => settogle(!togle)}
             className=" hover:text-green-800"
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="about"
             onClick={() => settogle(!togle)}
             className="hover:text-green-800 "
           >
             About
-          </a>
-          <a
-            href="#services"
+          </Link>
+          <Link
+            to="services"
             onClick={() => settogle(!togle)}
             className=" hover:text-green-800"
           >
             Services
-          </a>
-          <a
-            href="#team"
+          </Link>
+          <Link
+            to="team"
             onClick={() => settogle(!togle)}
             className="hover:text-green-800"
           >
             Our-Team
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="contact"
             onClick={() => settogle(!togle)}
             className=" hover:text-green-800"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </nav>
     </>
