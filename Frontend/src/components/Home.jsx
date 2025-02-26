@@ -26,7 +26,7 @@ function Home() {
         <div className="w-full flex flex-col md:flex-row items-center justify-evenly font-medium px-20 md:px-32 py-10 text-2xl gap-20 bg-green-300">
           <h1 className="font-bold">P-Healthcare, INDIA</h1>
           <div className="duration-200 flex items-center px-3 py-2 bg-green-700 rounded-md hover:bg-green-600 text-white">
-            <button>Find a Doctor</button>
+            <Link to="team"><button>Find a Doctor</button></Link>
           </div>
         </div>
       </div>
